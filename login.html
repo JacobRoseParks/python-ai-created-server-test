@@ -520,7 +520,7 @@
     submitBtn.textContent = 'Signing in…';
 
     try {
-      const res = await fetch('https://secure-ecommerce-b0bhb0gyeuhbgcg0.northcentralus-01.azurewebsites.net/', {
+      const res = await fetch('https://secure-ecommerce-b0bhb0gyeuhbgcg0.northcentralus-01.azurewebsites.net/api/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password: pass })
